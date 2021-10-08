@@ -21,24 +21,43 @@ body {
 }
 /* end basic Styles */
 
-img {
+image {
   width: 100%;
   height: auto;
   display: block;
 }
 
-p {
-  color: purple;
+/* begin hero styles */
+.hero-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 0px;
+  align-content: center;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+  width: 100%;
 }
-.mycolor {
-  color: red;
-  font-size: 56px;
+
+.hero-image-box {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
 }
-h1 {
-  color: blue;
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
-.mycolortwo {
-  color: blue;
-  font-size: 87px;
-  font-weight: bold;
+
+.heo-text-box {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  align-self: center;
+  padding: 1rem;
+  z-index: 10;
+  text-align: center;
 }
