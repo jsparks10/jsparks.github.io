@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome!</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/glightbox.min.css" />
   </head>
   <body>
     <header class="hero-box">
@@ -21,62 +22,78 @@
         <p class="hero-text">Blog For my Pets</p>
       </section>
     </header>
+
     <!--begin portfolio gallery-->
-    <section class="portfolio-gallery">
-      <h1>]portfolio</h1>
-      <div class="gayllery-item">
-        <a class="glightbox" href="img/Badgirl.jpeg">
-          <img
-            class="gallery-img"
-            src="img/Badgirl.jpeg"
-            alt="Dog Looking Guilty"
-        /></a>
-      </div>
-      <div class="gayllery-item">
-        <a class="glightbox" href="img/Goodkitty.jpeg">
-          <img
-            class="gallery-img"
-            src="img/Goodkitty.jpeg"
-            alt="cat sleeping on back of recliner"
-        /></a>
-      </div>
-      <div class="gayllery-item">
-        <a class="glightbox" href="img/Happytoseeme.jpeg">
-          <img
-            class="gallery-img"
-            src="img/Happytoseeme.jpeg"
-            alt="Dog smiling in door way"
-        /></a>
-      </div>
-      <div class="gayllery-item">
-        <a class="glightbox" href="img/Peek.jpeg">
-          <img
-            class="gallery-img"
-            src="img/Peek.jpeg"
-            alt="cat peering out window"
-        /></a>
-      </div>
-      <div class="gayllery-item">
-        <a class="glightbox" href="">
-          <img class="gallery-img" src="" alt=""
-        /></a>
-      </div>
-      <div class="gayllery-item">
-        <a class="glightbox" href="img/sleepybabes.jpeg">
-          <img
-            class="gallery-img"
-            src="img/sleepybabes.jpeg"
-            alt=" Dog and Car sleeping next to each other"
-        /></a>
-      </div>
-      <div class="gayllery-item">
-        <a class="glightbox" href="img/Grace.jpeg">
-          <img
-            class="gallery-img"
-            src="img/Grace.jpeg"
-            alt="Dog staring at viewer"
-        /></a>
-      </div>
+
+    <section class="portfolio-contaniner">
+      <h1>portfolio</h1>
+      <section class="portfolio-gallery">
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/Goodkitty.jpeg"
+            data-glightbox="title: Cat"
+            ;
+          >
+            <img
+              class="gallery-img"
+              src="img/Goodkitty.jpeg"
+              alt="cat sleeping on back of recliner"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/Happytoseeme.jpeg"
+            data-glightbox="title: Dog"
+          >
+            <img
+              class="gallery-img"
+              src="img/Happytoseeme.jpeg"
+              alt="Dog smiling in door way"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/Peek.jpeg"
+            data-glightbox="title: Bread"
+          >
+            <img
+              class="gallery-img"
+              src="img/Peek.jpeg"
+              alt="cat peering out window"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a class="glightbox" href="img/Badgirl.jpeg">
+            <img
+              class="gallery-img"
+              src="img/Badgirl.jpeg"
+              alt="Dog Looking Guilty"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a class="glightbox" href="img/sleepybabes.jpeg">
+            <img
+              class="gallery-img"
+              src="img/sleepybabes.jpeg"
+              alt=" Dog and Car sleeping next to each other"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a class="glightbox" href="img/Grace.jpeg">
+            <img
+              class="gallery-img"
+              src="img/Grace.jpeg"
+              alt="Dog staring at viewer"
+          /></a>
+        </div>
+      </section>
     </section>
+    <script src="js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop: true });
+    </script>
   </body>
 </html>
